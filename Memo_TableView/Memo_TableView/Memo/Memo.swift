@@ -35,8 +35,10 @@ class Memo: UIViewController {
         if Order == -1 {
             Data.insert(ContentTextView.text, at: 0)
         } else {
-            Data.remove(at: Order)
-            Data.insert(ContentTextView.text, at: 0)
+            if Data[Order] != ContentTextView.text {
+                Data.remove(at: Order)
+                Data.insert(ContentTextView.text, at: 0)
+            }            
         }
     }
     // 누르기만 해도 수정된걸로 되는데.. 어카지이이이이
