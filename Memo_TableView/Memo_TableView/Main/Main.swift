@@ -14,6 +14,9 @@ var Data = [String]()
 
 class Main: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    override var prefersStatusBarHidden: Bool {return true}
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

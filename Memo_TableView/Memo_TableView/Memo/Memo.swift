@@ -15,6 +15,9 @@ class Memo: UIViewController {
     
     let Order = UserDefaults.standard.object(forKey: "Order") as! Int
     
+    override var prefersStatusBarHidden: Bool {return true}
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
