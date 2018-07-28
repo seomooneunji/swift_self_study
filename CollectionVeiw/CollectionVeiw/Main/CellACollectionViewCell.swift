@@ -16,7 +16,7 @@ class CellACollectionViewCell: UICollectionViewCell, UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (frame.width-30)/2 , height: 100)
+        return CGSize(width: (frame.width-30)/2 , height: 199)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
